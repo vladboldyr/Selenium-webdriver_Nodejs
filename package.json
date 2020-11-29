@@ -1,0 +1,35 @@
+{
+  "name": "nodejs-scada3-tests",
+  "version": "1.0.1",
+  "description": "NodejsScada3TestsGoJS",
+  "main": "test.js",
+  "author": {
+    "name": ""
+  },
+  "scripts": {
+    "test": "mocha -r ts-node/register test.ts --reporter mocha-multi-reporters --reporter-options configFile=config.json",
+    "debug": "mocha --inspect-brk -r ts-node/register test.ts",
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  },
+  "devDependencies": {
+    "mocha-junit-reporter": "^2.0.0",
+    "mocha-multi-reporters": "^1.5.1",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^14.14.7",
+    "@types/selenium-webdriver": "^4.0.10",
+    "chromedriver": "^87.0.0",
+    "cross-env": "^7.0.2",
+    "gojs": "^2.1.29",
+    "mocha": "^8.2.1",
+    "node-localstorage": "^2.1.6",
+    "nodemon": "^2.0.6",
+    "selenium-webdriver": "^4.0.0-alpha.7",
+    "ts-node": "^9.0.0",
+    "tslib": "^2.0.3",
+    "yarn": "^1.22.10"
+  }
+}
